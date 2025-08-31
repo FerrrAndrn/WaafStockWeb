@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+}
+
+.navbar-top {
+    background: linear-gradient(90deg, #001f3f, #003366, #004080, #014f9d, #004080, #003366, #001f3f); /* Gradasi warna navy */
+    z-index: 1030;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo {
+    margin-left: 20px;
+}
+
+.navbar-top .navbar-text {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 50px;
+    margin-right: -5px;
+}
+
+.navbar-top .back-btn {
+    padding: 15px 30px; 
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    font-size: 1.0rem; 
+    border-radius: 30px; 
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+    margin: 0 10px;
+    margin-right: 30px;
+}
+
+.navbar-top .back-btn:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(0.95);
+}
+
+
+.sidebar {
+    background-color: white;
+    height: 100vh;
+    padding-top: 20px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    width: 270px;
+    position: fixed;
+}
+
+.sidebar .navbar-nav .nav-link {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin-left: 17px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.sidebar .navbar-nav .nav-link:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+.sidebar .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+}
+
+#contentArea {
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 5px;
+    margin-left: -95px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid .row {
+    margin-top: 50px;
+}
+
+.sidebar .navbar-nav .nav-link:hover {
+    background-color: #003366;
+    color: #ffffff
+}
+
+.sidebar .navbar-nav .nav-link.active {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.sidebar .navbar-nav .nav-link.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+form input {
+    border-radius: 8px;
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button#submitBtn {
+    border-radius: 8px;
+    padding: 10px 25px;
+    border: none;
+    background-color: #003366; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#submitBtn:hover {
+    background-color: #00254d;
+}
+
+button.edit-btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button.edit-btn:hover {
+    background-color: #218838;
+}
+
+button.delete-btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #dc3545; 
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+button.action-btn {
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+button.action-btn:hover {
+    opacity: 0.8;
+}
+
+.table-common {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+.table-stock th, .table-stock td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+    font-size: 14px;
+}
+
+.table-stock th {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+}
+
+.table-stock tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.table-stock tr:hover {
+    background-color: #ddd;
+}
+
+.table-stock thead {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.table-stock tfoot {
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Modal tersembunyi secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi transparan */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal .btn-ok {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal .btn-cancel {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal .btn-ok:hover {
+    background-color: #c82333;
+}
+
+.modal .btn-cancel:hover {
+    background-color: #00254d;
+}
+
+/* Style untuk Modal Sukses */
+.modal-success {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparan hitam */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-success .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Style untuk Tombol Tutup di Modal Sukses */
+.btn-close-success {
+    background-color: #003366; /* Hijau */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-close-success:hover {
+    background-color: #00254d; /* Warna hijau sedikit lebih gelap saat hover */
+}
+
+.btn-close-success:focus {
+    outline: none; /* Menghilangkan border saat fokus */
+}
+
+
+

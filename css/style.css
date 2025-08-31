@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 15px;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(0.95);
+}
+
+
+.left-box,
+.right-box {
+    width: 50%;
+    padding: 20px;
+}
+
+.left-box p,
+.left-box small {
+    margin-top: -5px; 
+    line-height: 1.4;  
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.left-box {
+    background: linear-gradient(90deg, #001f3f, #003366, #004080, #014f9d, #004080, #003366, #001f3f);
+    position: relative;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h2 {
+    background: linear-gradient(90deg, #001f3f, #003366, #004080, #014f9d, #004080, #003366, #001f3f);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form input {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #dee2e6;
+}
+
+.form input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 4px rgba(0, 51, 102, 0.5);
+}
+
+.btn-login {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #001f3f;
+}
+
+.btn-forgot {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-forgot:hover {
+    color: #002244;
+    text-decoration: underline;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.btn-navy {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-navy:hover {
+    background-color: #001f3f;
+    color: white;
+}
+
